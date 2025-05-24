@@ -3,6 +3,7 @@ import LandingPage from './LandingPage'; // Import the LandingPage component
 import HomePage from './HomePage';       // Import the HomePage component
 import QuestionsPage from './QuestionsPage'; // Import the QuestionsPage component
 import ScorePage from './ScorePage';     // Import the ScorePage component
+const apiKey = import.meta.env.VITE_GEMINI_API_KEY;
 
 // Main App component
 const App = () => {
@@ -74,7 +75,7 @@ const App = () => {
       let chatHistory = [];
       chatHistory.push({ role: "user", parts: [{ text: prompt }] });
       const payload = { contents: chatHistory };
-      const apiKey = "AIzaSyBOdmp0YD35IR9e4gIfJD6JB_t0IGgNnEg"; 
+      const apiKey = apiKey; 
       const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
 
       // Make the API call
