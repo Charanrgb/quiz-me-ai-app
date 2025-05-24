@@ -1,0 +1,121 @@
+/* src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Your custom CSS from the index.css immersive goes here */
+/* Base styles for the entire app container */
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif; /* Using Inter as specified */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Apply gradient background to the main app view */
+.min-h-screen {
+background: linear-gradient(to right, #0f172a, #1e293b, #334155);
+}
+
+
+/* Hero Section styles */
+.hero-section {
+  text-align: center;
+  padding: 3rem 1rem;
+  margin-bottom: 2rem;
+}
+
+.main-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero-subtitle {
+  font-size: 1.8rem;
+  color: #3498db;
+  margin-bottom: 1rem;
+}
+
+.hero-description {
+  font-size: 1.2rem;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+/* Feature Cards styles */
+.feature-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(52, 152, 219, 0.2);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin: 1rem auto;
+  max-width: 600px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+}
+
+.feature-icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.feature-card h3 {
+  color: #3498db;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.feature-card p {
+  color: white;
+  font-size: 1rem;
+}
+
+/* CTA Section styles */
+.cta-section {
+  text-align: center;
+  padding: 2rem 1rem;
+  margin: 2rem auto;
+  max-width: 800px;
+}
+
+.cta-section h2 {
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+/* Footer styles */
+.footer {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: 1rem;
+  color: white;
+  font-size: 0.9rem;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .main-title {
+      font-size: 2.5rem;
+  }
+
+  .hero-subtitle {
+      font-size: 1.5rem;
+  }
+
+  .feature-card {
+      margin: 1rem;
+  }
+}
