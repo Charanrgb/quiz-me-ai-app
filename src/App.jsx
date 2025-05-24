@@ -75,7 +75,6 @@ const App = () => {
       let chatHistory = [];
       chatHistory.push({ role: "user", parts: [{ text: prompt }] });
       const payload = { contents: chatHistory };
-      const apiKey = apiKey; 
       const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
 
       // Make the API call
